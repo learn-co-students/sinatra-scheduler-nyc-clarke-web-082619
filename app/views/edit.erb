@@ -1,0 +1,7 @@
+<form action='/courses/<%= @course.id %>' method="post">
+    <input id = "hidden" type="hidden" name="_method" value = "PATCH">
+    Name: <input type="text" name="course[name]" value = <%=@course.name%> >
+    Professor: <input type="text" name="course[professor]" value = <%=@course.professor%> >
+    Credits: <input type="text" name="course[credits]" value = <%=@course.credits%> >
+    <button type="submit"> Update Course </button>
+</form>
